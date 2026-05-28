@@ -9,7 +9,7 @@ function Header() {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
 
                 {/*added a little logo to the header, which was a signature that I had generated for me.*/}
-                <img src={signature} alt="Signature" className="h-13 w-auto mt-2" />
+                <img src={signature} alt="Signature" className="h-13 w-auto mt-2 animate-pulse" />
                 
                 <PopoverGroup className="flex gap-x-12 items-center">
                     
