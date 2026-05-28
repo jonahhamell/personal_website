@@ -1,5 +1,6 @@
 import { Popover, PopoverGroup, PopoverButton } from '@headlessui/react'
 
+
 function Header() {
     return (
         <header className="bg-white">
@@ -10,15 +11,15 @@ function Header() {
                     {/*added buttons for the header to be able to navigate throughout the websites, will add functionality at a later date.*/}
                     <Popover className="relative">
 
-                        <PopoverButton className="rounded bg-sky-600 px-4 py-2 text-sm text-white hover:bg-sky-500 active:bg-sky-700">
+                        <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 text-center">
                             About Me
                         </PopoverButton>
 
-                        <PopoverButton className="rounded bg-sky-600 px-4 py-2 text-sm text-white hover:bg-sky-500 active:bg-sky-700">
+                        <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 text-center">
                             Projects
                         </PopoverButton>
 
-                        <PopoverButton className="rounded bg-sky-600 px-4 py-2 text-sm text-white hover:bg-sky-500 active:bg-sky-700">
+                        <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 text-center">
                             Contact
                         </PopoverButton>
 
