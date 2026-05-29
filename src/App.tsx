@@ -1,4 +1,5 @@
 import Message from './Message';
+import AboutMe from './components/AboutMe';
 import Header from './components/Header';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       </div>
 
       <div>
-        <Message />
+        <AboutMe />
       </div>
 
     </>
