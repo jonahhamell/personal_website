@@ -1,9 +1,13 @@
-import { Popover, PopoverGroup, PopoverButton } from '@headlessui/react'
+import { Popover, PopoverGroup, PopoverButton, Switch} from '@headlessui/react'
+import {useState} from 'react'
 import signature from '../assets/signature.png'
 
 
 
 function Header() {
+
+    const [enabled, setEnabled] = useState(false);
+
     return (
         <header className="bg-white">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
@@ -34,6 +38,12 @@ function Header() {
 
 
                 </PopoverGroup>
+
+                {/*added a dark mode toggle switch, will add functionality at a later date.*/}
+                <Switch checked = {enabled} onChange = {setEnabled} className= "group inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition data-checked:bg-teal-600">
+                    <span className="size-4 translate-x-1 rounded-full bg-white transition group-data-checked:translate-x-6" />
+                </Switch>
+                    
 
             </nav>
         </header>
