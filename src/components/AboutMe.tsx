@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 function AboutMe() {
 
     return (
-        <div className="bg-teal-600 w-full items-center justify-center p-30 lg:px-70">\
+        <div className="bg-teal-600 w-full items-center justify-center p-30 lg:px-70 w-20">\
             <div className = "max-w-5xl w-full flex flex-col md:flex-row gap-12 items-center">
 
                 <div className="bg-white p-6 rounded-lg shadow-lg p-2 lg:px-5 lg:py-5 width-450">
@@ -35,16 +35,33 @@ function AboutMe() {
                 </div>
             </div>
 
-            <div className="text-white dark:text-gray-300 items-center justify-center mt-50">
+            <div className="text-white dark:text-gray-300 items-center justify-center mt-40">
                 <header className="text-3xl font-bold mb-4">
                     Main Languages and Use Cases
                 </header>
             </div>
 
-            <div className="grid auto-cols-max grid-flow-col justify-center gap-40 mt-10">
-                <div className="text-white">Python</div>
-                <div className="text-white">Java</div>
-                <div className="text-white">C/C++</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-center place-items-center gap-10 mt-10">
+                <div className="text-white text-4xl flex flex-col gap-6">
+                    <h3 className="text-white text-4xl">Python</h3>
+                    <p className="text-white text-xs mt-20">
+                        Python is my go-to language for machine learning and data analysis projects.
+                        I have used it for various projects, including training a model based on information
+                        scraped from Youtube, Reddit, and ESPN to predict NBA games.
+                    </p>
+                </div>
+                <div className="text-white text-4xl flex flex-col gap-6">
+                    <h3 className="text-white text-4xl">Java</h3>
+                    <p className="text-white text-xs mt-20">
+                        Java was mainly used for android development, and I have experience building android applications through Java. I have also worked on various projects using Java in Data Structures and Algorithms courses.
+                    </p>
+                </div>
+                <div className="text-white text-4xl flex flex-col gap-6">
+                    <h3 className="text-white text-4xl font-normal">C/C++</h3>
+                    <p className="text-white text-xs mt-20">
+                        C/C++ is my choice for Operating Systems and low-level programming. I have used it for various projects, including building a simple file system and creating a MUD (Multi-User Dungeon) game.
+                    </p>
+                </div>
             </div>
             
         </div>
