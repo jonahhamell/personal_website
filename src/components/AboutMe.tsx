@@ -23,7 +23,7 @@ function AboutMe() {
                     ]} 
                     wrapper="span"
                     speed = {25}
-                    style = {{ fontSize: '2em', display: 'inline-block', fontFamily: '' }}
+                    style = {{ fontSize: '2em', display: 'inline-block',}}
                     repeat={Infinity}
                     />
 
@@ -33,6 +33,18 @@ function AboutMe() {
                     </p>
 
                 </div>
+            </div>
+
+            <div className="text-white dark:text-gray-300 items-center justify-center mt-50">
+                <header className="text-3xl font-bold mb-4">
+                    Main Languages and Use Cases
+                </header>
+            </div>
+
+            <div className="grid auto-cols-max grid-flow-col justify-center gap-40 mt-10">
+                <div className="text-white">Python</div>
+                <div className="text-white">Java</div>
+                <div className="text-white">C/C++</div>
             </div>
             
         </div>
