@@ -1,4 +1,4 @@
-import Message from './Message';
+
 import AboutMe from './components/AboutMe';
 import Header from './components/Header';
 
